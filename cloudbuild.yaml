@@ -13,7 +13,7 @@ steps:
       [
         "run",
         "deploy",
-        "be_fawazgaz",
+        "be-fawazgaz",
         "--image",
         "gcr.io/$PROJECT_ID/tgs6-fwz",
         "--timeout",
