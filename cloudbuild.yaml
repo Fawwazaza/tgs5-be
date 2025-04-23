@@ -1,11 +1,11 @@
 steps:
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/tcc-tgs6-be_fawazgaz", "."]
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/tgs6-fwz", "."]
 
 
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/tcc-tgs6-be_fawazgaz"]
+    args: ["push", "gcr.io/$PROJECT_ID/tgs6-fwz"]
 
 
   - name: "gcr.io/cloud-builders/gcloud"
@@ -15,7 +15,7 @@ steps:
         "deploy",
         "be_fawazgaz",
         "--image",
-        "gcr.io/$PROJECT_ID/tcc-tgs6-be_fawazgaz",
+        "gcr.io/$PROJECT_ID/tgs6-fwz",
         "--timeout",
         "1000s",
         "--port",
